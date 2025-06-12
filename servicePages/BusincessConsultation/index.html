@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Montserrat -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- Font Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="business-consultation.css" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../../favicon" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../../favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../../favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../../favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../../favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../../favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../../favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../../favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png" />
+  <link rel="manifest" href="../../favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Busincess Consultation</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="../../images/logos.png" alt="Ouradrop Logo" />
+        </a>
+      </div>
+
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </li>
+        <li>
+          <a href="#services-container">What we do <span class="arrow">&#xf0d7;</span></a>
+        </li>
+        <li>
+          <a href="#who-we-are">Who we are <span class="arrow">&#xf0d7;</span></a>
+        </li>
+        <li>
+          <a href="#what-we-think">What we think <span class="arrow">&#xf0d7;</span></a>
+        </li>
+        <li>
+          <a href="#what-we-have-done">What we have done <span class="arrow">&#xf0d7;</span></a>
+        </li>
+        <div class="cta-buttons">
+          <a href="#contact" onclick="openPopup()">Get A Free Consultation</a>
+        </div>
+      </ul>
+
+      <ul class="nav-links">
+        <li class="hideonmobile">
+          <a href="#services-container">What we do <span class="arrow">▼</span></a>
+        </li>
+        <li class="hideonmobile">
+          <a href="#who-we-are">Who we are <span class="arrow">▼</span></a>
+        </li>
+        <li class="hideonmobile">
+          <a href="#what-we-think">What we think <span class="arrow">▼</span></a>
+        </li>
+        <li class="hideonmobile">
+          <a href="#what-we-have-done">What we have done <span class="arrow">▼</span></a>
+        </li>
+      </ul>
+
+      <li class="menu-btn" onclick="showSidebar()">
+        <a href="#"><i class="fa-solid fa-bars-staggered"></i></a>
+      </li>
+
+      <div class="cta-button">
+        <a href="#contact" onclick="openPopup()">Get A Free Consultation</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- services / busniess consultation -->
+  <section class="business-consultation-section">
+    <div class="service-header">
+      <p>Services / Business Consultation</p>
+    </div>
+    <div class="main-title">
+      <h1>
+        Convert Your <span class="highlight-text">Challenges</span><br />Into
+        <span class="highlight-text">Opportunities</span>
+      </h1>
+    </div>
+    <!-- gradient line  -->
+    <div class="gradient-line"></div>
+
+    <div class="description">
+      <p>
+        Business consultation is essential when you need expert guidance to
+        overcome<br />challenges, identify growth opportunities, or refine
+        your strategies
+      </p>
+    </div>
+    <div class="cta-containerBig">
+      <a href="#contact" onclick="openPopup()" class="cta-button1Big">Get A Free Consulation</a>
+      <p class="cta-taglineBig">
+        No Hidden Fees, No Sales Pressure • Just Consultation
+      </p>
+    </div>
+  </section>
+
+  <!-- Business Consultation Photo Section -->
+  <section class="photo-section">
+    <div class="consultation-photo-section">
+      <div class="consultation-photo left">
+        <img src="images/3.png" alt="Consultation Left" />
+      </div>
+      <div class="consultation-photo center">
+        <img src="images/2.png" alt="Consultation Center" />
+      </div>
+      <div class="consultation-photo right">
+        <img src="images/1.png" alt="Consultation Right" />
+      </div>
+    </div>
+  </section>
+  <!-- footer section starts -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="left-side">
+        <img src="../../images/meet.png" alt="Ouradrop Logo" class="full-logo" />
+        <p class="tagline">Convert People Into Customers</p>
+        <p class="location">
+          <strong><a href="https://maps.app.goo.gl/Mbenhzigj3JU9w6B7" target="_blank" class="mumbai">Mumbai,
+              India</a></strong><br />
+          Office No 2, Srushti Nirman, Nirman Nagari, Neral, Maharashtra,
+          410101
+        </p>
+        <div class="links">
+          <div class="column">
+            <a href="#">Affiliate Program</a>
+            <a href="#services-container">Our Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Blogs & Articles</a>
+            <a href="#">Case Studies</a>
+            <a href="#">Brand We Work With</a>
+          </div>
+          <div class="column">
+            <a href="#">Careers</a>
+            <a href="#">Locations</a>
+            <a href="#">Sitemap</a>
+            <a href="/t&c.html" target="_blank">Terms & Conditions</a>
+            <a href="/privacy.html" target="_blank">Privacy Policy</a>
+            <a href="#">Cookie Policy/Settings</a>
+          </div>
+        </div>
+
+        <div class="contacts">
+          <p>
+            <a href="tel:+919168036346"><i class="fas fa-phone"></i>+91 9168036346</a>
+          </p>
+          <p>
+            <a href="mailto:hello@ouradrop.com"><i class="fas fa-envelope"></i>hello@ouradrop.com</a>
+          </p>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://instagram.com/ouradrop" target="_blank" class="fa-brands fa-instagram"></a>
+          <a href="https://facebook.com/ouradrop" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="https://twitter.com/ouradrop" target="_blank" class="fa-brands fa-x-twitter"></a>
+          <a href="https://youtube.com/@ouradrop" target="_blank" class="fa-brands fa-youtube"></a>
+          <a href="https://linkedin.com/company/ouradrop" target="_blank" class="fa-brands fa-linkedin-in"></a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="form-backgrounds">
+          <div class="form-container">
+            <h3>Talk With Expert</h3>
+            <h2>Let's Create Something <br />AMAZING Together</h2>
+
+            <form action="https://api.web3forms.com/submit" method="POST" id="popupContactForm">
+              <input type="hidden" name="access_key" value="649f67d6-4952-4497-a453-7eb59e1a7a32" />
+
+              <div class="form-group">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" name="name" placeholder="Your Name*" id="name" required
+                  oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')" />
+              </div>
+
+              <div class="form-group">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" id="phone" name="phone" placeholder="Mobile Number*" maxlength="10" minlength="10"
+                  required pattern="[0-9]{10}" oninput="this.value = this.value.replace(/\D/g, '').slice(0, 10)" />
+              </div>
+              <!-- \d{10} -->
+              <div class="form-group">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" name="email" placeholder="Email ID*" required />
+              </div>
+              <div class="form-group">
+                <i class="fa-regular fa-building"></i>
+                <input type="text" name="business_name" placeholder="Business Name" />
+              </div>
+              <div class="form-group">
+                <i class="fa-solid fa-globe"></i>
+                <input type="text" name="website" placeholder="Business Website" />
+              </div>
+              <div class="form-group">
+                <i class="fa-regular fa-comment-dots"></i>
+                <textarea name="message" placeholder="Your Message"></textarea>
+              </div>
+              <div class="cta-containerx">
+                <button type="submit" class="cta-buttonx">
+                  Get A Free Consultation >>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="form-popup" id="popupForm">
+      <div class="form-background">
+        <div class="form-container">
+          <span class="close-btn" onclick="closePopup()">&times;</span>
+          <h3>Talk With Expert</h3>
+          <h2>Let's Create Something <br />AMAZING Together</h2>
+
+          <form action="https://api.web3forms.com/submit" method="POST" id="popupContactForm">
+            <input type="hidden" name="access_key" value="649f67d6-4952-4497-a453-7eb59e1a7a32" />
+
+            <div class="form-group">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" name="name" placeholder="Your Name*" id="name" required
+                oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')" />
+            </div>
+            <div class="form-group">
+              <i class="fa-solid fa-phone"></i>
+
+              <input type="tel" id="phone" name="phone" placeholder="Mobile Number*" maxlength="10" minlength="10"
+                required pattern="\d{10}" oninput="this.value = this.value.replace(/\D/g, '').slice(0, 10)" />
+
+              <!-- <input
+                  type="text"
+                  name="phone"
+                  placeholder="Mobile Number*"
+                  id="phone"
+                  maxlength="10"
+                  required
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                />
+                <small id="phoneError" style="color: red; display: none"
+                  >Please enter exactly 10 digits.</small> -->
+            </div>
+
+            <div class="form-group">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" name="email" placeholder="Email ID*" required />
+            </div>
+            <div class="form-group">
+              <i class="fa-regular fa-building"></i>
+              <input type="text" name="business_name" placeholder="Business Name" />
+            </div>
+            <div class="form-group">
+              <i class="fa-solid fa-globe"></i>
+              <input type="text" name="website" placeholder="Business Website" />
+            </div>
+            <div class="form-group">
+              <i class="fa-regular fa-comment-dots"></i>
+              <textarea name="message" placeholder="Your Message"></textarea>
+            </div>
+            <div class="cta-containerx">
+              <button type="submit" class="cta-buttonx">
+                Get A Free Consultation >>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="end">
+    <p>
+      <i class="fa-regular fa-copyright"></i> 2025 Ouradrop. All Rights
+      Reserved
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+/* Business Consultation Section */
+body{
+  overflow-x: hidden;
+}
+.business-consultation-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 1rem;
+}
+
+.service-header {
+  margin-bottom: 1rem;
+  font-family: "Helvetica World", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: bold;
+  color: #fff;
+}
+
+.main-title {
+  margin-bottom: 1rem;
+}
+
+.main-title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 5.5rem;
+  line-height: 0.9;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.highlight-text {
+  color: #ff4d00;
+}
+
+/* Gradient Line */
+.gradient-line {
+  width: 100%;
+  max-width: 850px;
+  height: 4px;
+  background: linear-gradient(to right, #fb565c, #931cb8, #a200ff, #cc00ff);
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.description {
+  margin-bottom: 1rem;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+/* Button Code */
+.cta-button1Big {
+  margin-top: 40px;
+  font-family: "Helvetica World", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  width: 41rem;
+  height: 5.5rem;
+  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
+  color: #fff;
+  font-size: 2.2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.625rem;
+  letter-spacing: 0.0625rem;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 1;
+  background-size: 200%;
+  margin-bottom: 20px;
+}
+
+.cta-button1Big:hover {
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 50%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.cta-button1Big:before {
+  content: "";
+  position: absolute;
+  top: -0.3125rem; /* Converted -5px */
+  left: -0.3125rem; /* Converted -5px */
+  right: -0.3125rem; /* Converted -5px */
+  bottom: -0.3125rem; /* Converted -5px */
+  z-index: -1;
+  background: linear-gradient(90deg, #ff5e62, #c964ff, #ff9966, #ff5e62);
+  background-size: 200%;
+  border-radius: 0.625rem; /* Converted 10px */
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cta-button1Big:hover:before {
+  filter: blur(0.625rem); /* Converted 10px */
+  opacity: 1;
+  animation: animate 1.5s linear infinite;
+}
+
+.cta-taglineBig {
+  font-family: "Lato", sans-serif;
+  font-size: 19px;
+  font-weight: 100;
+  font-weight: bold;
+  line-height: 1.4px; 
+  letter-spacing: 0.15em;
+  color: #d6c6b5;
+}
+
+/* Business Consultation Photo Section */
+.photo-section{
+  position: relative;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  margin-bottom: 35px;
+}
+.consultation-photo-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2vw;
+  margin: 60px 0 40px 0;
+  padding: 32px 0 32px 0;
+  border-radius: 32px;
+  position: relative;
+}
+.consultation-photo {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 32px 0 rgba(0,0,0,0.25);
+  background: #1a0103;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+.consultation-photo.left {
+  position: relative;
+  border: 2.5px solid #ff5e5e;
+  width: 32vw;
+  max-width: 500px;
+  height: 400px;
+  z-index: 1;
+  margin-bottom: 35px;
+  left: 200px;
+}
+.consultation-photo.center {
+  border: 2.5px solid #ffb35c;
+  width: 56vw;
+  min-width: 620px;
+  max-width: 720px;
+  margin: 0 -3vw;
+  z-index: 3;
+  box-shadow: 0 8px 40px 0 rgba(255, 179, 92, 0.18);
+}
+.consultation-photo.right {
+  border: 2.5px solid #a97cff;
+  width: 32vw;
+  max-width: 500px;
+  height: 400px;
+  z-index: 1;
+  margin-bottom: 35px;
+  right: 200px;
+}
+.consultation-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .business-consultation-section {
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+  }
+
+  .service-header {
+    font-size: 0.8rem;
+  }
+
+  .main-title h1 {
+    font-size: 2.5rem;
+  }
+
+  .gradient-line {
+    max-width: 90%;
+    height: 3px;
+    margin: 1rem auto;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    font-family: "Lato", sans-serif;
+  }
+
+  .description br {
+    display: none;
+  }
+
+  .cta-button1Big {
+    width: 90%;
+    height: 4rem;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .cta-taglineBig {
+    font-size: 0.9rem;
+  }
+
+  .photo-container {
+    flex-direction: column;
+  }
+
+  .photo-item {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .left-photo {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .center-photo {
+    border-radius: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .right-photo {
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .consultation-photo.left,
+  .consultation-photo.right {
+    width: 32vw;
+    min-width: 180px;
+    max-width: 260px;
+  }
+  .consultation-photo.center {
+    width: 40vw;
+    min-width: 220px;
+    max-width: 340px;
+  }
+}
+@media (max-width: 700px) {
+  .consultation-photo-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 0;
+  }
+  .consultation-photo.left,
+  .consultation-photo.right,
+  .consultation-photo.center {
+    width: 90vw;
+    min-width: 0;
+    max-width: 98vw;
+    margin: 0;
+  }
+  .consultation-photo.center {
+    order: -1;
+  }
+}
