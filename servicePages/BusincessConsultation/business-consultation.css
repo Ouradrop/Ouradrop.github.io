@@ -1,7 +1,9 @@
 /* Business Consultation Section */
-body{
+body {
   overflow-x: hidden;
+  background: rgb(33 0 0);
 }
+
 .business-consultation-section {
   display: flex;
   flex-direction: column;
@@ -10,6 +12,7 @@ body{
   text-align: center;
   padding: 3rem 1rem;
   margin-top: 1rem;
+  margin-bottom: 65px;
 }
 
 .service-header {
@@ -22,12 +25,12 @@ body{
 }
 
 .main-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 .main-title h1 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 5.5rem;
   line-height: 0.9;
   margin-bottom: 0.5rem;
@@ -42,7 +45,16 @@ body{
 .gradient-line {
   width: 100%;
   max-width: 850px;
-  height: 4px;
+  height: 3px;
+  background: linear-gradient(to right, #fb565c, #931cb8, #a200ff, #cc00ff);
+  margin: 1rem;
+  border-radius: 2px;
+}
+
+.gradient-line1 {
+  width: 100%;
+  max-width: 900px;
+  height: 3px;
   background: linear-gradient(to right, #fb565c, #931cb8, #a200ff, #cc00ff);
   margin: 1rem auto;
   border-radius: 2px;
@@ -55,6 +67,34 @@ body{
   line-height: 1.5;
   color: #fff;
 }
+
+.descriptionTwo {
+  margin-bottom: 1rem;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 80px;
+}
+.descriptionThree{
+  margin-top: 20px;
+  max-width: 1200px;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.KaushanBigFont {
+  margin-top: 40px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 4.5rem;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
 /* Button Code */
 .cta-button1Big {
   margin-top: 40px;
@@ -89,9 +129,11 @@ body{
   0% {
     background-position: 0%;
   }
+
   50% {
     background-position: 50%;
   }
+
   100% {
     background-position: 200%;
   }
@@ -100,20 +142,26 @@ body{
 .cta-button1Big:before {
   content: "";
   position: absolute;
-  top: -0.3125rem; /* Converted -5px */
-  left: -0.3125rem; /* Converted -5px */
-  right: -0.3125rem; /* Converted -5px */
-  bottom: -0.3125rem; /* Converted -5px */
+  top: -0.3125rem;
+  /* Converted -5px */
+  left: -0.3125rem;
+  /* Converted -5px */
+  right: -0.3125rem;
+  /* Converted -5px */
+  bottom: -0.3125rem;
+  /* Converted -5px */
   z-index: -1;
   background: linear-gradient(90deg, #ff5e62, #c964ff, #ff9966, #ff5e62);
   background-size: 200%;
-  border-radius: 0.625rem; /* Converted 10px */
+  border-radius: 0.625rem;
+  /* Converted 10px */
   opacity: 0;
   transition: 0.5s;
 }
 
 .cta-button1Big:hover:before {
-  filter: blur(0.625rem); /* Converted 10px */
+  filter: blur(0.625rem);
+  /* Converted 10px */
   opacity: 1;
   animation: animate 1.5s linear infinite;
 }
@@ -123,13 +171,13 @@ body{
   font-size: 19px;
   font-weight: 100;
   font-weight: bold;
-  line-height: 1.4px; 
+  line-height: 1.4px;
   letter-spacing: 0.15em;
   color: #d6c6b5;
 }
 
 /* Business Consultation Photo Section */
-.photo-section{
+.photo-section {
   position: relative;
   margin-top: 35px;
   display: flex;
@@ -139,6 +187,7 @@ body{
   padding: 2rem 1rem;
   margin-bottom: 35px;
 }
+
 .consultation-photo-section {
   display: flex;
   justify-content: center;
@@ -149,17 +198,19 @@ body{
   border-radius: 32px;
   position: relative;
 }
+
 .consultation-photo {
   position: relative;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 6px 32px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.25);
   background: #1a0103;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.2s;
 }
+
 .consultation-photo.left {
   position: relative;
   border: 2.5px solid #ff5e5e;
@@ -170,6 +221,7 @@ body{
   margin-bottom: 35px;
   left: 200px;
 }
+
 .consultation-photo.center {
   border: 2.5px solid #ffb35c;
   width: 56vw;
@@ -179,6 +231,7 @@ body{
   z-index: 3;
   box-shadow: 0 8px 40px 0 rgba(255, 179, 92, 0.18);
 }
+
 .consultation-photo.right {
   border: 2.5px solid #a97cff;
   width: 32vw;
@@ -188,12 +241,111 @@ body{
   margin-bottom: 35px;
   right: 200px;
 }
+
 .consultation-photo img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
+
+/* Photo Info Section Styles */
+.photo-info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  border-radius: 24px;
+  padding: 48px 32px;
+  margin: 48px auto;
+  max-width: 1100px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  transition: background 0.3s;
+}
+
+.photo-info-image img {
+  width: 340px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+  object-fit: cover;
+}
+
+.photo-info-content {
+  max-width: 500px;
+  color: #fff;
+}
+
+.photo-info-content h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.photo-info-gradient-line {
+  height: 4px;
+  width: 120px;
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  border-radius: 2px;
+  margin-bottom: 18px;
+}
+
+.photo-info-content p {
+  font-size: 1.18rem;
+  line-height: 1.7;
+  color: #f3f3f3;
+  font-family: "Lato", sans-serif;
+}
+
+.photo-info-content b {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Inverted Section */
+.photo-info-section.inverted {
+  flex-direction: row-reverse;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(221, 36, 118, 0.10);
+}
+
+.photo-info-section.inverted .photo-info-content {
+  color: #222;
+}
+
+.photo-info-section.inverted .photo-info-content h2 {
+  color: #dd2476;
+}
+
+.photo-info-section.inverted .photo-info-gradient-line {
+  background: linear-gradient(90deg, #dd2476 0%, #ff512f 100%);
+}
+
+.photo-info-section.inverted .photo-info-content p {
+  color: #333;
+}
+
+.photo-info-section.inverted .photo-info-content b {
+  color: #dd2476;
+}
+
+@media (max-width: 900px) {
+
+  .photo-info-section,
+  .photo-info-section.inverted {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 12px;
+  }
+
+  .photo-info-image img {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .business-consultation-section {
@@ -216,12 +368,28 @@ body{
   }
 
   .description {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
     font-family: "Lato", sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    max-width: 1220px;
   }
 
   .description br {
+    display: none;
+  }
+
+  .descriptionTwo {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    max-width: 1220px;
+  }
+
+  .descriptionTwo br {
     display: none;
   }
 
@@ -263,18 +431,21 @@ body{
 }
 
 @media (max-width: 1100px) {
+
   .consultation-photo.left,
   .consultation-photo.right {
     width: 32vw;
     min-width: 180px;
     max-width: 260px;
   }
+
   .consultation-photo.center {
     width: 40vw;
     min-width: 220px;
     max-width: 340px;
   }
 }
+
 @media (max-width: 700px) {
   .consultation-photo-section {
     flex-direction: column;
@@ -282,6 +453,7 @@ body{
     gap: 18px;
     padding: 18px 0;
   }
+
   .consultation-photo.left,
   .consultation-photo.right,
   .consultation-photo.center {
@@ -290,7 +462,271 @@ body{
     max-width: 98vw;
     margin: 0;
   }
+
   .consultation-photo.center {
     order: -1;
   }
 }
+
+/* Business Analysis Full-Width Section */
+.business-analysis-full {
+  margin-top: 30px;
+  width: 100vw;
+  min-height: 580px;
+  background: linear-gradient(90deg, #F24800, #4B1100, #200000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 0 64px 0;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
+}
+
+.business-analysis-full-Invert {
+  margin-top: 30px;
+  width: 100vw;
+  min-height: 580px;
+  background: linear-gradient(90deg, #200000, #e94500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 0 64px 0;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
+}
+
+.business-analysis-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  width: 100%;
+  gap: 64px;
+  padding: 0 48px;
+}
+
+.business-analysis-image img {
+  width: 740px;
+  max-width: 44vw;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.10);
+  border: 4px solid transparent;
+  border-radius: 18px;
+  background: linear-gradient(90deg, #a259ff 0%, #f24e1e 100%);
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  box-shadow:
+    0 4px 32px rgba(0, 0, 0, 0.10),
+    0 0 0 4px transparent;
+}
+
+.business-analysis-image {
+  display: inline-block;
+  border-radius: 18px;
+  padding: 4px;
+  background: linear-gradient(90deg, #a259ff 0%, #f24e1e 100%);
+}
+
+.business-analysis-image img {
+  background: #fff;
+  border-radius: 14px;
+  border: none;
+  display: block;
+}
+
+.business-analysis-content {
+  color: #fff;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.business-analysis-content h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.business-analysis-gradient-line {
+  height: 5px;
+  width: 630px;
+  max-width: 100%;
+  background: linear-gradient(90deg, #a259ff 0%, #f24e1e 100%);
+  border-radius: 2px;
+  margin-bottom: 32px;
+}
+
+.business-analysis-content p {
+  font-size: 1.45rem;
+  line-height: 1.7;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0;
+}
+
+.business-analysis-content b {
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .business-analysis-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 16px;
+  }
+
+  .business-analysis-image img {
+    width: 100%;
+    max-width: 90vw;
+  }
+
+  .business-analysis-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .business-analysis-gradient-line {
+    width: 220px;
+  }
+}
+
+@media (max-width: 700px) {
+  .business-analysis-full {
+    padding: 32px 0;
+  }
+
+  .business-analysis-content h2 {
+    font-size: 2rem;
+  }
+
+  .business-analysis-gradient-line {
+    width: 120px;
+  }
+
+  .business-analysis-content p {
+    font-size: 1.05rem;
+  }
+}
+
+
+/* Industry Stats Section */
+.industry-stats {
+  margin-top: 65px;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 95px;
+}
+
+.industry-stats h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  margin-left: -750px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: white;
+  font-family: "Lato", Arial, sans-serif;
+  margin-right: 35px;
+}
+
+.stat-divider {
+  width: 60px;
+  height: 12px;
+  background: linear-gradient(90deg, #ff3632 0%, #ff894a 100%);
+  margin-right: 72px;
+}
+
+.stat-item p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+  font-family: "Lato", Arial, sans-serif;
+  margin: 0;
+  margin-left: 80px;
+  align-items: end;
+  max-height: 220px;
+  text-align: left;
+  font-style: bold;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .stats-container {
+    gap: 30px;
+  }
+
+  .stat-item {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .industry-stats h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+  }
+
+  .stat-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-item {
+    min-width: 100%;
+  }
+
+  .stats-container {
+    gap: 40px;
+  }
+}
+
+/* Invert Section */
