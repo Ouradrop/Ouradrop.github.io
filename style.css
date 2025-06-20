@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb:hover {
 .cta-button a {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  background: linear-gradient(to right, #FB565C, #931cb8, #5d00ff, #6200ff);
+  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -128,7 +128,7 @@ body::-webkit-scrollbar-thumb:hover {
   left: -5px;
   bottom: -5px;
   z-index: -1;
-  background: linear-gradient(to right, #FB565C, #931cb8, #5d00ff, #6200ff);
+  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
   background-size: 200%;
   border-radius: 10px;
   opacity: 0;
@@ -145,7 +145,7 @@ body::-webkit-scrollbar-thumb:hover {
 .cta-buttons a {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  background: linear-gradient(to right, #FB565C, #931cb8, #5d00ff, #6200ff);
+  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -600,7 +600,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: inline-block;
   width: 28.125rem; /* Converted 450px */
   height: auto;
-  background: linear-gradient(to right, #FB565C, #931cb8, #5d00ff, #6200ff);
+  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
   color: #fff;
   font-weight: bold;
   font-size: 1.2rem;
@@ -1226,7 +1226,7 @@ ul li {
   display: inline-block;
   width: 28.125rem; /* Converted 450px */
   height: auto;
-  background: linear-gradient(to right, #FB565C, #931cb8, #5d00ff, #6200ff);
+  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
   color: #fff;
   font-weight: bold;
   font-size: 1.2rem;
@@ -1584,7 +1584,7 @@ ul li {
   display: inline-block;
   width: 28.125rem; /* Converted 450px */
   height: auto;
-  background: linear-gradient(to right, #FB565C, #931cb8, #5d00ff, #6200ff);
+  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
   color: #fff;
   font-weight: bold;
   font-size: 1.2rem;
@@ -2160,7 +2160,7 @@ textarea::placeholder {
   display: inline-block;
   width: 24.375rem; /* 390px / 16 */
   height: auto;
-  background: linear-gradient(to right, #FB565C, #931cb8, #5d00ff, #6200ff);
+  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
   color: #fff;
   font-weight: bold;
   font-size: 1.125rem; /* 18px / 16 */
@@ -2605,6 +2605,3 @@ textarea::placeholder {
     font-size: 0.8rem; /* Slightly smaller list items */
   }
 }
-
-
-

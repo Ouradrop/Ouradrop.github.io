@@ -30,7 +30,7 @@ body {
 
 .main-title h1 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 5.5rem;
   line-height: 0.9;
   margin-bottom: 0.5rem;
@@ -76,15 +76,18 @@ body {
   color: #fff;
   margin-bottom: 80px;
 }
-.descriptionThree{
+.descriptionThree {
   margin-top: 20px;
   max-width: 1200px;
   font-family: "Lato", Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   color: #fff;
   margin-bottom: 50px;
+  line-height: 38px;
 }
+
+
 
 .KaushanBigFont {
   margin-top: 40px;
@@ -96,8 +99,14 @@ body {
 }
 
 /* Button Code */
+.cta-containerBig {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
 .cta-button1Big {
-  margin-top: 40px;
+  position: relative;
+  margin-top: 20px;
   font-family: "Helvetica World", Arial, sans-serif;
   font-weight: bold;
   text-align: center;
@@ -106,19 +115,18 @@ body {
   justify-content: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   text-decoration: none;
-  width: 41rem;
-  height: 5.5rem;
+  width: 28rem;
+  height: 3.5rem;
   background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
   color: #fff;
-  font-size: 2.2rem;
-  padding: 1rem 2rem;
-  border-radius: 0.625rem;
+  font-size: 1.3rem;
+  border-radius: 0.8rem;
   letter-spacing: 0.0625rem;
-  position: relative;
   box-sizing: border-box;
   z-index: 1;
   background-size: 200%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-left: 17px;
 }
 
 .cta-button1Big:hover {
@@ -168,11 +176,12 @@ body {
 
 .cta-taglineBig {
   font-family: "Lato", sans-serif;
-  font-size: 19px;
-  font-weight: 100;
+  font-size: 13px;
+  font-weight: 200;
   font-weight: bold;
   line-height: 1.4px;
   letter-spacing: 0.15em;
+  margin-left: 10px;
   color: #d6c6b5;
 }
 
@@ -268,7 +277,7 @@ body {
   width: 340px;
   height: auto;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
   object-fit: cover;
 }
 
@@ -308,7 +317,7 @@ body {
 .photo-info-section.inverted {
   flex-direction: row-reverse;
   background: #fff;
-  box-shadow: 0 8px 32px rgba(221, 36, 118, 0.10);
+  box-shadow: 0 8px 32px rgba(221, 36, 118, 0.1);
 }
 
 .photo-info-section.inverted .photo-info-content {
@@ -332,7 +341,6 @@ body {
 }
 
 @media (max-width: 900px) {
-
   .photo-info-section,
   .photo-info-section.inverted {
     flex-direction: column;
@@ -431,7 +439,6 @@ body {
 }
 
 @media (max-width: 1100px) {
-
   .consultation-photo.left,
   .consultation-photo.right {
     width: 32vw;
@@ -473,7 +480,7 @@ body {
   margin-top: 30px;
   width: 100vw;
   min-height: 580px;
-  background: linear-gradient(90deg, #F24800, #4B1100, #200000);
+  background: linear-gradient(90deg, #f24800, #4b1100, #200000);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -520,15 +527,13 @@ body {
   max-width: 44vw;
   height: auto;
   object-fit: cover;
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
   border: 4px solid transparent;
   border-radius: 18px;
   background: linear-gradient(90deg, #a259ff 0%, #f24e1e 100%);
   background-clip: padding-box, border-box;
   background-origin: border-box;
-  box-shadow:
-    0 4px 32px rgba(0, 0, 0, 0.10),
-    0 0 0 4px transparent;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1), 0 0 0 4px transparent;
 }
 
 .business-analysis-image {
@@ -547,17 +552,31 @@ body {
 
 .business-analysis-content {
   color: #fff;
-  max-width: 650px;
+  max-width: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.business-analysis-content-invert {
+  color: #fff;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .business-analysis-content h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 18px;
   font-family: "Montserrat", sans-serif;
+}
+.business-analysis-content-invert h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-align: right;
 }
 
 .business-analysis-gradient-line {
@@ -575,9 +594,22 @@ body {
   color: #fff;
   font-family: "Lato", sans-serif;
   margin-bottom: 0;
+  text-align: justify;
+}
+.business-analysis-content-invert p {
+  font-size: 1.45rem;
+  line-height: 1.7;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0;
+  text-align: right;
 }
 
 .business-analysis-content b {
+  color: #fff;
+  font-weight: 700;
+}
+.business-analysis-content-invert b {
   color: #fff;
   font-weight: 700;
 }
@@ -620,7 +652,6 @@ body {
     font-size: 1.05rem;
   }
 }
-
 
 /* Industry Stats Section */
 .industry-stats {
@@ -728,5 +759,7 @@ body {
     gap: 40px;
   }
 }
-
+.space{
+  margin-bottom: 15px;
+}
 /* Invert Section */
