@@ -9,9 +9,9 @@
 
 /* Body Styling */
 body {
-  margin-top: 20px;  /*change 40 to 20px*/
+  margin-top: 20px; /*change 40 to 20px*/
   font-family: "Helvetica World", Arial, sans-serif;
-  background-color: #1a0000;
+  background-color: rgb(33 0 0);
   color: #fff;
 }
 
@@ -24,18 +24,18 @@ html {
 } */
 
 body::-webkit-scrollbar {
-  width: 12px;               /* width of vertical scrollbar */
-  height: 12px;              /* height of horizontal scrollbar */
+  width: 12px; /* width of vertical scrollbar */
+  height: 12px; /* height of horizontal scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: transparent;           /* track color */
+  background: transparent; /* track color */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ff4d00;  /* thumb color */
-  border-radius: 6px;        /* rounded corners */
-  border: 2px solid rgb(0, 0, 0);     /* adds padding around thumb */
+  background-color: #ff4d00; /* thumb color */
+  border-radius: 6px; /* rounded corners */
+  border: 2px solid rgb(0, 0, 0); /* adds padding around thumb */
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -48,8 +48,8 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;   /*change 1rem to 0 */
-  background-color: #1a0000;
+  padding: 0 2rem; /*change 1rem to 0 */
+  background-color: rgb(33 0 0);
 }
 
 /* Logo */
@@ -91,54 +91,41 @@ body::-webkit-scrollbar-thumb:hover {
 .cta-button a {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
   color: #fff;
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 1rem; /* base size */
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
   position: relative;
   box-sizing: border-box;
   z-index: 1;
-  background-size: 200%;
+  background-size: 600% 600%;
+  animation: gradientMove 5s ease infinite;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
 }
 
 .cta-button a:hover {
-  animation: animate 1.5s linear infinite;
+  box-shadow: 0 0 10px #d3d000, 0 0 20px #ff8400, 0 0 30px #ff4400;
+  transform: scale(1.08);
+  font-size: 17px;
 }
 
-@keyframes animate {
+@keyframes gradientMove {
   0% {
-    background-position: 0%;
+    background-position: 0% 50%;
   }
-
   50% {
-    background-position: 50%;
+    background-position: 100% 50%;
   }
-
   100% {
-    background-position: 200%;
+    background-position: 0% 50%;
   }
-}
-
-.cta-button a:before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  left: -5px;
-  bottom: -5px;
-  z-index: -1;
-  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
-  background-size: 200%;
-  border-radius: 10px;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.cta-button a:hover:before {
-  filter: blur(10px);
-  opacity: 1;
-  animation: animate 1.5s linear infinite;
 }
 
 /* Call-to-Action Button fero mobile header */
@@ -202,7 +189,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100vh;
   width: 100vw;
   z-index: 5;
-  background-color: #331601;
+  background-color: rgb(33 0 0);
   box-shadow: 2w 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
@@ -1407,7 +1394,7 @@ ul li {
   margin: 0 auto; /* Unchanged */
   padding: 1.25rem; /* 20px -> 1.25rem */
   text-align: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /* Service Card */
@@ -1540,7 +1527,7 @@ ul li {
 
 /* Text Wrapper Styling */
 .today {
-  background-color: #1a0000; /* Dark brown color */
+  background-color: rgb(33 0 0); /* Dark brown color */
   color: #fff; /* White text */
   padding: 3.125rem 1.25rem; /* 50px becomes 3.125rem (1rem = 16px) */
 }
@@ -1794,16 +1781,20 @@ ul li {
 
 .footer {
   color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
 
 .footer-container {
   display: flex;
   justify-content: center;
-  gap: 21.875rem; /* 350px / 16 */
+  gap: 23.875rem; /* 350px / 16 */
   flex-wrap: wrap;
   position: relative;
   top: 5rem; /* 80px / 16 */
   background: linear-gradient(180deg, #1a0000, #300101, #5b0505);
+  margin-bottom: 30px;
+  height: auto;
+  padding: 50px;
 }
 
 .left-side {
@@ -1944,8 +1935,6 @@ ul li {
   padding: 0; /* Prevents additional padding from shifting icons */
   font-size: 2rem;
 }
-
-
 
 @media (max-width: 768px) {
   .footer-container {
@@ -2334,11 +2323,10 @@ textarea::placeholder {
   }
 }
 
-
 .end {
   width: 100%;
   height: 20vh;
-  background-color: #5b0505;
+  background-color: rgb(33 0 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2350,7 +2338,6 @@ textarea::placeholder {
   color: white; /* optional for visibility */
   margin: 0;
 }
-
 
 @media (max-width: 768px) {
   .end {
@@ -2365,7 +2352,6 @@ textarea::placeholder {
     font-size: 0.6rem; /* Slightly larger for readability on small screens */
   }
 }
-
 
 /* CodeByVivek */
 
@@ -2383,7 +2369,7 @@ textarea::placeholder {
 }
 ::-webkit-scrollbar-button {
   display: none; 
-} */  /* Hides the top and bottom arrows, new loc as said by yash */
+} */ /* Hides the top and bottom arrows, new loc as said by yash */
 
 /* header */
 /* added header with fixed header */
@@ -2407,7 +2393,7 @@ textarea::placeholder {
 }
 
 /* Adding new Custom Cursor */
-.cursor{
+.cursor {
   position: fixed;
   width: 40px;
   height: 40px;
@@ -2416,8 +2402,8 @@ textarea::placeholder {
   color: orange;
 }
 
-.body{
-  cursor: url('https://banner2.cleanpng.com/20180702/ezx/aaxhzuzdh.webp'), auto;
+.body {
+  cursor: url("https://banner2.cleanpng.com/20180702/ezx/aaxhzuzdh.webp"), auto;
 }
 
 /* Next Page for privacy.html */
@@ -2461,8 +2447,6 @@ textarea::placeholder {
     background-position: 50% 100%; /* Move to right */
   }
 }
-
-
 
 .privacy-text {
   font-family: "Lato", sans-serif;
@@ -2593,7 +2577,7 @@ textarea::placeholder {
     margin-left: 1rem; /* Reduce indentation */
   }
 
-  .policy-lists{
+  .policy-lists {
     margin-left: 1rem;
   }
 
