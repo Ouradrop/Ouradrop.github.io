@@ -3,6 +3,27 @@ body {
   overflow-x: hidden;
   background: rgb(33 0 0);
 }
+.constant-texts {
+  background: linear-gradient(90deg, #ff4d00, #ff9900, #ffd700);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  animation: gradient-move 6s linear infinite;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .business-consultation-section {
   display: flex;
@@ -37,27 +58,51 @@ body {
   color: #fff;
 }
 
-.highlight-text {
-  color: #ff4d00;
-}
-
 /* Gradient Line */
 .gradient-line {
   width: 100%;
   max-width: 850px;
   height: 3px;
-  background: linear-gradient(to right, #fb565c, #931cb8, #a200ff, #cc00ff);
-  margin: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgb(113, 29, 176),
+    rgb(194, 18, 146),
+    rgb(239, 64, 64),
+    rgb(255, 167, 50)
+  );
+  background-size: 300% 100%; /* make gradient larger for movement */
   border-radius: 2px;
+  margin: 1rem;
+  animation: gradientSlide 6s linear infinite;
 }
 
 .gradient-line1 {
   width: 100%;
   max-width: 900px;
   height: 3px;
-  background: linear-gradient(to right, #fb565c, #931cb8, #a200ff, #cc00ff);
+  background: linear-gradient(
+    90deg,
+    rgb(113, 29, 176),
+    rgb(194, 18, 146),
+    rgb(239, 64, 64),
+    rgb(255, 167, 50)
+  );
+  background-size: 300% 100%;
   margin: 1rem auto;
   border-radius: 2px;
+  animation: gradientSlide 6s linear infinite;
+}
+
+@keyframes gradientSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .description {
@@ -87,8 +132,6 @@ body {
   line-height: 38px;
 }
 
-
-
 .KaushanBigFont {
   margin-top: 40px;
   font-family: "Kaushan Script", cursive;
@@ -105,19 +148,24 @@ body {
   justify-content: center;
 }
 .cta-button1Big {
+  display: flex;
   position: relative;
   margin-top: 20px;
   font-family: "Helvetica World", Arial, sans-serif;
   font-weight: bold;
   text-align: center;
-  display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   width: 28rem;
   height: 3.5rem;
-  background: linear-gradient(to right, #fb565c, #931cb8, #5d00ff, #6200ff);
+  background: linear-gradient(
+    90deg,
+    rgb(113, 29, 176),
+    rgb(194, 18, 146),
+    rgb(239, 64, 64),
+    rgb(255, 167, 50)
+  );
   color: #fff;
   font-size: 1.3rem;
   border-radius: 0.8rem;
@@ -127,65 +175,39 @@ body {
   background-size: 200%;
   margin-bottom: 10px;
   margin-left: 17px;
+  animation: gradientMove 5s ease infinite;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
 }
 
 .cta-button1Big:hover {
-  animation: animate 1.5s linear infinite;
+  box-shadow: 0 0 10px #d3d000, 0 0 20px #ff8400, 0 0 30px #ff4400;
+  transform: scale(1.08);
+  font-size: 24px;
 }
-
-@keyframes animate {
+@keyframes gradientMove {
   0% {
-    background-position: 0%;
+    background-position: 0% 50%;
   }
-
   50% {
-    background-position: 50%;
+    background-position: 100% 50%;
   }
-
   100% {
-    background-position: 200%;
+    background-position: 0% 50%;
   }
 }
-
-.cta-button1Big:before {
-  content: "";
-  position: absolute;
-  top: -0.3125rem;
-  /* Converted -5px */
-  left: -0.3125rem;
-  /* Converted -5px */
-  right: -0.3125rem;
-  /* Converted -5px */
-  bottom: -0.3125rem;
-  /* Converted -5px */
-  z-index: -1;
-  background: linear-gradient(90deg, #ff5e62, #c964ff, #ff9966, #ff5e62);
-  background-size: 200%;
-  border-radius: 0.625rem;
-  /* Converted 10px */
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.cta-button1Big:hover:before {
-  filter: blur(0.625rem);
-  /* Converted 10px */
-  opacity: 1;
-  animation: animate 1.5s linear infinite;
-}
-
 .cta-taglineBig {
   font-family: "Lato", sans-serif;
   font-size: 13px;
-  font-weight: 200;
+  /* font-weight: 200; */
   font-weight: bold;
   line-height: 1.4px;
   letter-spacing: 0.15em;
-  margin-left: 10px;
+  margin-left: 16px;
   color: #d6c6b5;
 }
 
 /* Business Consultation Photo Section */
+
 .photo-section {
   position: relative;
   margin-top: 35px;
@@ -211,18 +233,23 @@ body {
 .consultation-photo {
   position: relative;
   border-radius: 18px;
+  border: 2.5px solid transparent;
   overflow: hidden;
   box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.25);
-  background: #1a0103;
-  display: flex;
+  background: linear-gradient(90deg, #ff5e5e, #ffb35c, #a97cff, #ff5e5e);
+  background-size: 300% 300%;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  padding: 1.5px;
   align-items: center;
   justify-content: center;
   transition: transform 0.2s;
+  animation: borderGradientMove 6s linear infinite;
 }
 
 .consultation-photo.left {
   position: relative;
-  border: 2.5px solid #ff5e5e;
+  /* border: 2.5px solid #ff5e5e; */
   width: 32vw;
   max-width: 500px;
   height: 400px;
@@ -232,7 +259,7 @@ body {
 }
 
 .consultation-photo.center {
-  border: 2.5px solid #ffb35c;
+  /* border: 2.5px solid #ffb35c; */
   width: 56vw;
   min-width: 620px;
   max-width: 720px;
@@ -242,7 +269,7 @@ body {
 }
 
 .consultation-photo.right {
-  border: 2.5px solid #a97cff;
+  /* border: 2.5px solid #a97cff; */
   width: 32vw;
   max-width: 500px;
   height: 400px;
@@ -256,6 +283,18 @@ body {
   height: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 16px;
+}
+@keyframes borderGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Photo Info Section Styles */
@@ -480,11 +519,12 @@ body {
   margin-top: 30px;
   width: 100vw;
   min-height: 580px;
-  background: linear-gradient(90deg, #f24800, #4b1100, #200000);
+  background: linear-gradient(90deg, #f24800, #4b1100, #200000, #f24800);
+  background-size: 400% 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 64px 0 64px 0;
+  padding: 64px 0;
   margin: 0;
   position: relative;
   left: 50%;
@@ -492,17 +532,31 @@ body {
   margin-left: -50vw;
   margin-right: -50vw;
   box-sizing: border-box;
+  animation: businessGradientMove 6s ease infinite;
+}
+
+@keyframes businessGradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 .business-analysis-full-Invert {
   margin-top: 30px;
   width: 100vw;
   min-height: 580px;
-  background: linear-gradient(90deg, #200000, #e94500);
+  background: linear-gradient(90deg, #f24800, #4b1100, #200000, #f24800);
+  background-size: 400% 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 64px 0 64px 0;
+  padding: 64px 0;
   margin: 0;
   position: relative;
   left: 50%;
@@ -510,6 +564,7 @@ body {
   margin-left: -50vw;
   margin-right: -50vw;
   box-sizing: border-box;
+  animation: businessGradientMove 6s ease infinite;
 }
 
 .business-analysis-container {
@@ -583,9 +638,18 @@ body {
   height: 5px;
   width: 630px;
   max-width: 100%;
-  background: linear-gradient(90deg, #a259ff 0%, #f24e1e 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(113, 29, 176),
+    rgb(194, 18, 146),
+    rgb(239, 64, 64),
+    rgb(255, 167, 50)
+  );
+  background-size: 300% 100%;
+  margin: 1rem auto;
   border-radius: 2px;
   margin-bottom: 32px;
+  animation: gradientSlide 6s linear infinite;
 }
 
 .business-analysis-content p {
@@ -707,9 +771,25 @@ body {
 .stat-divider {
   width: 60px;
   height: 12px;
-  background: linear-gradient(90deg, #ff3632 0%, #ff894a 100%);
+  background: linear-gradient(90deg, red,rgb(251, 255, 0));
+  background-size: 300% 100%;
   margin-right: 72px;
+  animation: statDividerPingPong 4s linear infinite;
 }
+
+@keyframes statDividerPingPong {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+
 
 .stat-item p {
   font-size: 1.3rem;
@@ -759,7 +839,7 @@ body {
     gap: 40px;
   }
 }
-.space{
+.space {
   margin-bottom: 15px;
 }
 /* Invert Section */
