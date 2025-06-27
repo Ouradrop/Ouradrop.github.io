@@ -146,11 +146,6 @@ body {
   position: relative;
   align-items: center;
   justify-content: center;
-  display: flex;
-  flex-direction: column; /* stack children vertically */
-  align-items: center; /* center them horizontally */
-  gap: 0.5rem; /* space between button and text */
-  text-align: center;
 }
 .cta-button1Big {
   display: flex;
@@ -602,7 +597,7 @@ body {
 .stat-divider {
   width: 60px;
   height: 12px;
-  background: linear-gradient(90deg, red, rgb(255, 196, 0));
+  background: linear-gradient(90deg, red,rgb(255, 196, 0));
   background-size: 300% 100%;
   margin-right: 72px;
   animation: statDividerPingPong 4s linear infinite;
@@ -619,6 +614,8 @@ body {
     background-position: 0% 0%;
   }
 }
+
+
 
 .stat-item p {
   font-size: 1.3rem;
@@ -637,88 +634,21 @@ body {
 .space {
   margin-bottom: 15px;
 }
-/* basic media query */
-@media only screen and (max-width: 455px) {
-  body {
-    overflow-x: hidden;
-  }
-  .business-consultation-section {
-    max-width: 400px;
-    height: 100%;
-    margin: 50px auto;
-  }
 
-  .service-header {
-    font-size: medium;
-  }
-  .main-title h1 {
-    font-size: 3rem;
-    overflow-y: hidden;
-  }
-  .gradient-line {
-    height: 5px;
-  }
-  .constant-texts {
-    font-size: 3rem;
-  }
-  .description {
-    font-size: 1.3rem;
-  }
-  .cta-containerBig {
-    padding: 1rem;
-    gap: 0.75rem;
-  }
-  .cta-button1Big {
-    font-size: medium;
-    margin-bottom: -7px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .cta-taglineBig {
-    display: contents;
-    align-items: center;
-    font-size: 0.6rem;
-    gap: 0.1rem;
-    margin-top: -20px;
-    text-align: center;
-    max-width: max-content;
-  }
-  .consultation-photo-section {
-    margin: 50% auto;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px; /* spacing between stacked cards */
-    margin: 0;
-    padding: 16px 0;
-  }
 
-  .consultation-photo {
-    width: 90vw !important;
-    max-width: 95%;
-    height: auto !important;
-    margin: 0 auto !important;
-    left: 0 !important;
-    right: 0 !important;
-    border-radius: 18px;
-  }
 
-  .consultation-photo {
-    width: 90vw !important;
-    max-width: 95%;
-    height: auto !important;
-    margin: 0 auto 24px auto !important;
-    left: 0 !important;
-    right: 0 !important;
-  }
 
-  .consultation-photo.left,
-  .consultation-photo.center,
-  .consultation-photo.right {
-    margin-bottom: 20px;
-  }
-  .consultation-photo.center {
-    min-width: unset !important;
-    max-width: unset !important;
-    width: 90vw !important;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

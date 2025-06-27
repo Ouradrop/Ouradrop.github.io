@@ -2586,3 +2586,11 @@ textarea::placeholder {
     font-size: 0.8rem; /* Slightly smaller list items */
   }
 }
+
+/* CodeByVivek */
+@media only screen and (max-width:455px){
+  *{
+    overflow-x: hidden;
+  }
+  
+}
